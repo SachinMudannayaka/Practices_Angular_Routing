@@ -1,0 +1,8 @@
+<h1>Angular Blog site</h1>
+<button routerLink="/" routerLinkActive="active">Home</button>
+<button routerLink="/posts" routerLinkActive="active"[queryParams]="{page:1,orderBy:'newest'}">POST LIST</button>
+<button (click)="onSubmit()">Submit</button>
+<!-- When use href it refresh the whole page <a href="/posts">Post-List-href</a>-->
+
+
+<router-outlet></router-outlet>
